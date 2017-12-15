@@ -20,4 +20,9 @@ public class Cliente extends Pessoa
         this.novoCliente.add(c);
     }
     
+    public String toString()
+    {
+        return "" + super.toString() + this.novoCliente;
+    }
+    
 }

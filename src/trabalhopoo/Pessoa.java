@@ -79,4 +79,9 @@ public class Pessoa
         this.telefone = telefone;
     }
     
+    public String toString()
+    {
+        return "" + this.nome + this.cpf + this.telefone + this.logradouro + this.bairro + this.cidade + this.estado;
+    }
+    
 }

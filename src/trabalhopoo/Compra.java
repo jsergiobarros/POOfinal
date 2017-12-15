@@ -78,4 +78,9 @@ public class Compra
                 System.out.printf("Você digitou uma operação inválida.");        
         }
     }
+    
+    public String toString()
+    {
+        return "" + this.produtosDaCompra + this.valorAPagar + this.valorPago;
+    }
 }

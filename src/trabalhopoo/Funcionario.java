@@ -24,8 +24,15 @@ public class Funcionario extends Pessoa
             return this.totalEmVendas;
         }
         
-        public void venda()
+        public void venda(Compra c)
         {
-            
+            c.valorDaCompra();
+            this.totalEmVendas = c.valorDaCompra();
+            System.out.println("Foi adcionado as vendas desse funcionário + R$" + this.totalEmVendas);
+        }
+        
+        public String toString()
+        {
+            return "" + super.toString() + this.pis + this.totalEmVendas;
         }
 }
